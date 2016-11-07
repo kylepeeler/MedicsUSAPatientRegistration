@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.med-history{
+  font-weight: normal;
+}
+.inksignature{
+  border: 2px solid black;
+}
+
+.logo {
+    margin-top:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-group {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+legend {
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.form-group p label {
+    font-weight: normal;
+}
+
+@media (min-width:992px)
+{
+    .addressline1desktop
+    {
+        width: 70%;
+        float: left;
+    }
+    .addressline2desktop
+    {
+        width: 28%;
+        float: left;
+        margin-left: 5px;
+    }
+    .addressline3desktop
+    {
+        width: 49%;
+        float: left;
+    }
+    .addressline4desktop
+    {
+        width: 49%;
+        float: left;
+        margin-left: 5px;
+    }
+}
+
+.addresslinepadding
+{
+    margin-bottom: 5px;
+}
+#bloodRelativesDisease {
+    width: 60%;
+}
+
+th {
+
+    text-align: center;
+    background: #ecf0f1;
+
+}
+
+#tableResponse{
+    text-align: center;
+}
+
+#spinner
+{
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -100px;
+    z-index: 999;
+    overflow: auto;
+}
+
+.formSubmitting
+{
+    background:rgba(255,255,255,0.5);
+}
+
+.control-label{
+    text-align: left!important;
+}
+
+td.row-number{
+    text-align: center;
+    padding-top: 12px!important;
+}

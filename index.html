@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MedicsUSA New Patient Registration Form</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/formstyle.css" rel="stylesheet" type="text/css">
+    <!-- LuxSci Signatures -->
+    <script type="text/javascript" src="//d3nojzhs96djbd.cloudfront.net/static/js/ink_signatures_v6.js"></script>
+    <!--[if IE]><script type="text/javascript" src="//d3nojzhs96djbd.cloudfront.net/static/js/excanvas.compiled.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+</head>
+
+<body>
+    <div id="msmheader" class="jumbotron">
+        <h1>
+        <img src="assets/images/musalogo.png" alt="Placeholder image" width="270" class="img-responsive">New Patient
+        Registration Form</h1>
+
+    </div>
+    <div class="container">
+        <p id="form-header">All information is confidential and submitted securely to MedicsUSA. Please answer honestly to assure the best possible treatment for you. Please complete steps 1 - 5, you may move freely between them below. You can submit the form on the last
+            tab.
+        </p>
+        <!-- Form Start -->
+        <form method="post" class="form-horizontal" id="MedicsUSAPatientReg" name="MedicsUSAPatientReg">
+            <fieldset>
+                <div class="tabbable">
+                    <!-- Tab Header -->
+                    <ul class="nav nav-tabs nav-justified nav-tabs-justified" id="tab_bar">
+                        <li class="active"><a href="#newPatientRegistration" data-toggle="tab">1. New Patient Registration Form</a></li>
+                        <li><a href="#newPatientHealthHistory" data-toggle="tab">2. New Patient Health History Questionnaire</a></li>
+                        <li><a href="#newPatientPortalAuth" data-toggle="tab">3. New Patient Portal Authorization</a></li>
+                        <li><a href="#medicalInformationRelease" data-toggle="tab">4. New Patient Medical Information Release</a></li>
+                        <li><a href="#paymentAndTreatmentPolicies" data-toggle="tab">5. Payment and Treatment Policies</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <!-- TAB 1-->
+                        <div class="tab-pane active" id="newPatientRegistration">
+
+                            <!-- Patient Information - Row 1 -->
+                            <div class="row" style="display: block;">
+                                <legend style="display: block;"> Patient Information </legend>
+                                <div class="col-md-4">
+                                    <div class="form-group" style="display: block;">
+                                        <label class="control-label" for="firstName">First Name:</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="lastName">Last Name:</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="middleInitial">Middle Initial:</label>
+                                        <input type="text" class="form-control" id="middleInitial" placeholder="Middle Initial" name="middleInitial" required maxlength="1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Patient Information - Row 2 -->
+                            <div class="row" style="display: block;">
+                                <div class="col-md-4">
+                                    <div class="form-group" style="display: block;">
+                                        <label class="control-label" for="socialSecurityNumber">Social Security Number:</label>
+                                        <input type="text" class="form-control" id="socialSecurityNumber" placeholder="XXX-XX-XXXX" name="socialSecurityNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group" style="display: block;">
+                                        <label class="control-label" for="dateOfBirth">Date of Birth:</label>
+                                        <input type="text" class="form-control datepicker" id="dateOfBirth" placeholder="MM/DD/YYYY" name="dateOfBirth">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group" style="display: block;">
+                                        <label class="control-label" for="age">Age:</label>
+                                        <input type="text" class="form-control" id="age" placeholder="Age" name="age">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Patient Information - Row 3/4 -->
+                            <div class="row" style="display: block;">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="emailAddress">Email Address:</label>
+                                        <input type="text" class="form-control" id="emailAddress" placeholder="Email address" name="emailAddress">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="homePhone">Home Phone:</label>
+                                        <input type="text" class="form-control" id="homePhone" placeholder="(XXX) XXX-XXXX" name="homePhone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="cellPhone">Cell Phone:</label>
+                                        <input type="text" class="form-control" id="cellPhone" placeholder="(XXX) XXX-XXXX" name="cellPhone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="maritalStatus_Married">Marital Status:</label>
+                                        <p>
+                                            <label>
+                                        <input type="radio" name="maritalStatus" value="Single" id="martialStatus_Single">
+                                        Single </label>
+                                            <br>
+                                            <label>
+                                          <input type="radio" name="maritalStatus" value="Married" id="maritalStatus_Married">
+                                          Married </label>
+                                            <br>
+                                            <label>
+                                          <input type="radio" name="maritalStatus" value="Divorced" id="maritalStatus_Divorced">
+                                          Divorced </label>
+                                            <br>
+                                            <label>
+                                          <input type="radio" name="maritalStatus" value="Seperated" id="maritalStatus_Separated">
+                                          Separated </label>
+                                            <br>
+                                            <label>
+                                          <input type="radio" name="maritalStatus" value="Spouse Deceased" id="maritalStatus_Widowed">
+                                          Spouse Deceased </label>
+                                            <br>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="patientAddress">Address:</label>
+                                        <input type="text" class="form-control address" id="patientAddress" placeholder="Address" name="patientAddress" required="">
+                                        <input type="text" class="form-control address" placeholder="Address Line 2/Apt. #" id="patientApt" title="apt" name="patientApt">
+                                        <input type="text" class="form-control address" placeholder="City" style="display: block;" id="patientCity" name="patientCity" required="">
+                                        <input type="text" class="form-control address" placeholder="State/Province" style="display: block;" name="patientState" id="patientState" required="" maxlength="2">
+                                        <input type="text" class="form-control address" placeholder="Zip Code" style="display: block;" id="patientZip" name="patientZip" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Patient Information - Row 5 -->
+                            <div class="row" style="display: block;">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="occupation">Occupation:</label>
+                                        <input type="text" class="form-control" id="occupation" placeholder="Occupation" name="occupation">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="employer">Employer:</label>
+                                        <input type="text" class="form-control" id="employer" placeholder="Employer" name="employer">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="employerPhone">Employer Phone:</label>
+                                        <input type="text" class="form-control" id="employerPhone" placeholder="Employer Phone" name="employerPhone">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Patient Information - Row 6 -->
+                            <div class="row" style="display: block;">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="emergencyContactName">Emergency Contact Name:</label>
+                                        <input type="text" class="form-control" id="emergencyContactName" placeholder="Emergency Contact Name" name="emergencyContactName">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="emergencyContactPhone">Emergency Contact Phone:</label>
+                                        <input type="text" class="form-control" id="emergencyContactPhone" placeholder="Emergency Contact Phone" name="emergencyContactPhone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="emergencyContactRelationship">Relationship:</label>
+                                        <input type="text" class="form-control" id="emergencyContactRelationship" placeholder="Relationship" name="emergencyContactRelationship">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Optional Info -->
+                            <div class="row" style="display: block;">
+                                <legend style="display: block; margin-bottom: 0;"> Optional Information </legend>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="race">Race:</label>
+                                        <input type="text" class="form-control" id="race" placeholder="Race" name="race">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="ethnicity">Ethnicity:</label>
+                                        <input type="text" class="form-control" id="ethnicity" placeholder="Ethnicity" name="ethnicity">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="language">Language:</label>
+                                        <input type="text" class="form-control" id="language" placeholder="Language" name="language">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Preferred Pharmacies -->
+                            <div class="row">
+                                <legend style="display: block;"> Preferred Pharmacies</legend>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="prefPharmacy1Name">Preferred Pharmacy #1 Name:</label>
+                                        <input type="text" class="form-control" id="prefPharmacy1Name" placeholder="Pharmacy Name" name="prefPharmacy1Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="prefPharmacy1Location">Preferred Pharmacy #1 Location:</label>
+                                        <input type="text" class="form-control" id="prefPharmacy1Location" placeholder="Pharmacy Location" name="prefPharmacy1Location">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="prefPharmacy2Name">Preferred Pharmacy #2 Name:</label>
+                                        <input type="text" class="form-control" id="prefPharmacy2Name" placeholder="Pharmacy Name" name="prefPharmacy2Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="prefPharmacy2Location">Preferred Pharmacy #2 Location:</label>
+                                        <input type="text" class="form-control" id="prefPharmacy2Location" placeholder="Pharmacy Location" name="prefPharmacy2Location">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <legend> Referral Information</legend>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="howFindMedicsUSA">How did you find out Medics USA?</label>
+                                        <select class="form-control">
+                                            <option>Referred by a hospital or another doctor</option>
+                                            <option>Recommended by insurance plan</option>
+                                            <option>Recommended by family</option>
+                                            <option>Recommended by friend</option>
+                                            <option>Found online</option>
+                                            <option>Saw a newspaper ad</option>
+                                            <option>Other</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="referredByDoctorName">What was their name?</label>
+                                        <input type="text" class="form-control" id="referredByDoctorName" placeholder="Hospital/Doctor Name" name="referredByDoctorName">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="otherReferralDescription">Please describe how you found us:</label>
+                                        <input type="text" class="form-control" id="otherReferralDescription" placeholder="Other Referral" name="otherReferralDescription">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <legend> Insurance Information</legend>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="workRelatedInjury">Is this a work related injury?</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="workRelatedInjury" value="Yes" id="workRelatedInjury_Yes">
+                                    Yes </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="workRelatedInjury" value="No" id="workRelatedInjury_No">
+                                      No </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="employerResponsibleForBill">If yes, will your employer be responsible for the bill?</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="employerResponsibleForBill" value="Yes" id="employerResponsibleForBill_Yes">
+                                    Yes </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="employerResponsibleForBill" value="No" id="employerResponsibleForBill_No">
+                                      No </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="otherResponsibleBillingParty">Will some person besides you be responsible for the bill?</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="otherResponsibleBillingParty" value="Yes" id="otherResponsibleBillingParty_Yes">
+                                    Yes </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="otherResponsibleBillingParty" value="No" id="otherResponsibleBillingParty_No">
+                                      No </label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p><strong>If employer will be responsible, please provide:</strong></p>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="employerNameBilling">Employer Name:</label>
+                                        <input type="text" class="form-control" id="employerNameBilling" placeholder="Employer Name" name="employerNameBilling">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="employerPhoneBilling">Employer Phone:</label>
+                                        <input type="text" class="form-control" id="employerPhoneBilling" placeholder="Employer Phone" name="employerPhoneBilling">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="employerContact">Employer Contact:</label>
+                                        <input type="text" class="form-control" id="employerContact" placeholder="Employer Contact" name="employerContact">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p><strong>Responsible party contact information:</strong></p>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="responsiblePartyName">Responsible Party Name:</label>
+                                        <input type="text" class="form-control" id="responsiblePartyName" placeholder="Name" name="responsiblePartyName">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="responsiblePartyDOB">Responsible Party DOB (if known):</label>
+                                        <input type="text" class="form-control" id="responsiblePartyDOB" placeholder="MM/DD/YYYY" name="responsiblePartyDOB">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="responsiblePartyPhone">Responsible Party Phone #:</label>
+                                        <input type="text" class="form-control" id="responsiblePartyPhone" placeholder="Phone" name="responsiblePartyPhone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="responsiblePartyAddress">Responsible Party Address (if different from yours):</label>
+                                        <input type="text" class="form-control address" id="responsiblePartyAddress" placeholder="Address" name="responsiblePartyAddress">
+                                        <input type="text" class="form-control address" placeholder="City" style="display: block;" id="responsiblePartyCity" name="responsiblePartyCity">
+                                        <input type="text" class="form-control address" placeholder="State/Province" style="display: block;" name="responsiblePartyState" id="responsiblePartyState" maxlength="2">
+                                        <input type="text" class="form-control address" placeholder="Zip Code" style="display: block;" id="responsiblePartyZip" name="responsiblePartyZip">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p><strong>My primary insurance (look on your insurance card for this information):</strong></p>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1SubscriberName">Subscriber's Name:</label>
+                                        <input type="text" class="form-control" id="insurance1SubscriberName" placeholder="Subscriber's Name" name="insurance1SubscriberName">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1SubscriberSS">Subscriber's SS #:</label>
+                                        <input type="text" class="form-control" id="insurance1SubscriberSS" placeholder="XXX-XX-XXXX" name="insurance1SubscriberSS">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1SubscriberDOB">Subscriber's DOB:</label>
+                                        <input type="text" class="form-control" id="insurance1SubscriberDOB" placeholder="MM/DD/YYYY" name="insurance1SubscriberDOB">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1Carrier">Carrier:</label>
+                                        <input type="text" class="form-control" id="insurance1Carrier" placeholder="MM/DD/YYYY" name="insurance1Carrier">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1Phone">Phone:</label>
+                                        <input type="text" class="form-control" id="insurance1Phone" placeholder="XXX-XXX-XXXX" name="insurance1Phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1GroupNumber">Group #:</label>
+                                        <input type="text" class="form-control" id="insurance1GroupNumber" placeholder="Group #" name="insurance1GroupNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1PolicyNumber">Policy #:</label>
+                                        <input type="text" class="form-control" id="insurance1PolicyNumber" placeholder="Policy #" name="insurance1PolicyNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1Copayment">Co-payment:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" class="form-control" id="insurance1Copayment" placeholder="Amount" name="insurance1Copayment">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance1Relationship">Patient's relationship to subscriber</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="insurance1Relationship" value="Self" id="insurance1Relationship_Self">
+                                    Self </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="insurance1Relationship" value="Spouse" id="insurance1Relationship_Spouse">
+                                      Spouse </label>
+                                            <br>
+                                            <label>
+                                    <input type="radio" name="insurance1Relationship" value="Child" id="insurance1Relationship_Child">
+                                    Child </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="insurance1Relationship" value="Other" id="insurance1Relationship_Other">
+                                      Other <input type="text" class="form-control" id="insurance1RelationshipOther" placeholder="Describe Relationship" name="insurance1RelationshipOther"></label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p><strong>My secondary insurance (look on your insurance card for this information):</strong></p>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2SubscriberName">Subscriber's Name:</label>
+                                        <input type="text" class="form-control" id="insurance2SubscriberName" placeholder="Subscriber's Name" name="insurance2SubscriberName">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2SubscriberSS">Subscriber's SS #:</label>
+                                        <input type="text" class="form-control" id="insurance2SubscriberSS" placeholder="XXX-XX-XXXX" name="insurance2SubscriberSS">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2SubscriberDOB">Subscriber's DOB:</label>
+                                        <input type="text" class="form-control" id="insurance2SubscriberDOB" placeholder="MM/DD/YYYY" name="insurance2SubscriberDOB">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2Carrier">Carrier:</label>
+                                        <input type="text" class="form-control" id="insurance2Carrier" placeholder="MM/DD/YYYY" name="insurance2Carrier">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2Phone">Phone:</label>
+                                        <input type="text" class="form-control" id="insurance2Phone" placeholder="XXX-XXX-XXXX" name="insurance2Phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2GroupNumber">Group #:</label>
+                                        <input type="text" class="form-control" id="insurance2GroupNumber" placeholder="Group #" name="insurance2GroupNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2PolicyNumber">Policy #:</label>
+                                        <input type="text" class="form-control" id="insurance2PolicyNumber" placeholder="Policy #" name="insurance2PolicyNumber">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2Copayment">Co-payment:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" class="form-control" id="insurance2Copayment" placeholder="Amount" name="insurance2Copayment">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="insurance2Relationship">Patient's relationship to subscriber</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="insurance2Relationship" value="Self" id="insurance2Relationship_Self">
+                                    Self </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="insurance2Relationship" value="Spouse" id="insurance2Relationship_Spouse">
+                                      Spouse </label>
+                                            <br>
+                                            <label>
+                                    <input type="radio" name="insurance2Relationship" value="Child" id="insurance2Relationship_Child">
+                                    Child </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="insurance2Relationship" value="Other" id="insurance2Relationship_Other">
+                                      Other <input type="text" class="form-control" id="insurance2RelationshipOther" placeholder="Describe Relationship" name="insurance2RelationshipOther"></label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>
+                                    The above information is true to the best of my knowledge. I authorize my insurance benefits be paid directly to the physician. I understand that I am financially responsible for any balance. I also authorize Medics USA Medical Center or insurance company
+                                    to release any information required to process my claims. Please note there is a $25 fee for all missed appointments if not cancelled 24 hours in advance. I will make Medics USA aware of any changes to the above information.
+                                    In addition there is a $1.50 fee per returned statement. To ensure continuity of care and proper utilization of prescription medication, we participate in the Virginia Board of Pharmacy Prescription Monitoring program,
+                                    and by signing below you give us permission to access your prescription history.
+                                </p>
+                                <div class="col-md-6">
+                                    <label class="control-label">Patient/Guardian Signature:</label>
+                                    <script type="text/javascript">
+                                        new sform.Signature({
+                                            id: 'newPatientRegSignature',
+                                            form_name: 'MedicsUSAPatientReg',
+                                            field_name: 'newPatientRegSignature',
+                                            caption: 'New Patient Registration Signature',
+                                            w: 500,
+                                            h: 75,
+                                            css: 'inksignature'
+                                        });
+                                    </script>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="newPatientRegSignatureDate">Today's Date</label>
+                                        <input type="text" class="form-control" id="newPatientRegSignatureDate" placeholder="MM/DD/YYYY" name="newPatientRegSignatureDate">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Back/Next Buttons -->
+                            <ul class="pager">
+                                <li class="nexttab"><a href="#newPatientHealthHistory">New Patient Health History Questionnaire <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- TAB 2 -->
+                        <div class="tab-pane" id="newPatientHealthHistory">
+
+                            <div class="row">
+                                <legend>
+                                    New Patient Health History Questionnaire
+                                </legend>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="newPatientQuestionnaireName">Name (Last, First, M.I.):</label>
+                                        <input type="text" class="form-control" id="newPatientQuestionnaireName" placeholder="Last, First, M.I." name="newPatientQuestionnaireName">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="newPatientQuestionnaireDOB">Date of Birth:</label>
+                                        <input type="text" class="form-control" id="newPatientQuestionnaireDOB" placeholder="MM/DD/YYYY" name="newPatientQuestionnaireDOB">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="newPatientQuestionnaireGender">Gender:</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="newPatientQuestionnaireGender" value="M" id="newPatientQuestionnaireGender_M">
+                                    Male </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="newPatientQuestionnaireGender" value="F" id="newPatientQuestionnaireGender_F">
+                                      Female </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="reasonForVisit">What is the reason for your visit today?</label>
+                                        <input type="text" class="form-control" id="reasonForVisit" placeholder="Reason for visit" name="reasonForVisit">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="previousOrPrimaryDoctor">Previous or Primary Doctor:</label>
+                                        <input type="text" class="form-control" id="previousOrPrimaryDoctor" placeholder="Previous/Primary Doctor" name="previousOrPrimaryDoctor">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="lastPhysicialDate">Date of last physicial exam:</label>
+                                        <input type="text" class="form-control" id="lastPhysicialDate" placeholder="MM/DD/YYYY" name="lastPhysicialDate">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="hadAnesthesiaPreviously">Have you ever had anesthesia (Novocain)?</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="hadAnesthesiaPreviously" value="Yes" id="hadAnesthesiaPreviously_Yes">
+                                    Yes </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="hadAnesthesiaPreviously" value="No" id="hadAnesthesiaPreviously_No">
+                                      No </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="badReactionToAnesthesia">Any bad reaction to anesthesia?</label>
+                                        <p>
+                                            <label>
+                                    <input type="radio" name="badReactionToAnesthesia" value="Yes" id="badReactionToAnesthesia_Yes">
+                                    Yes </label>
+                                            <br>
+                                            <label>
+                                      <input type="radio" name="badReactionToAnesthesia" value="No" id="badReactionToAnesthesia_No">
+                                      No </label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Medication List-->
+                            <div class="row" style="display: block;">
+                                <!-- Row 5 -->
+                                <legend style="display: block;">Past Medical History</legend>
+                                <label>Please check if you have any of the following:</label>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Vertigo" value="Yes" id="MedicalHistory_Vertigo">
+                            Vertigo </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Anxiety" value="Yes" id="MedicalHistory_Anxiety">
+                            Anxiety </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Arthritis" value="Yes" id="MedicalHistory_Arthritis">
+                            Arthritis </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Depression" value="Yes" id="MedicalHistory_Depression">
+                            Depression </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Anemia" value="Yes" id="MedicalHistory_Anemia">
+                            Anemia</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="AlcoholAbuse" value="Yes" id="MedicalHistory_AlcoholAbuse">
+                            Alcohol Abuse </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="NeurologicalDisorder" value="Yes" id="MedicalHistory_NeurologicalDisorder">
+                            Neurological Disorder </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="HighBloodPressure" value="Yes" id="MedicalHistory_HighBloodPressure">
+                            High Blood Pressure</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Bronchitis" value="Yes" id="MedicalHistory_Bronchitis">
+                            Bronchitis </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="AbdominalPain" value="Yes" id="MedicalHistory_AbdominalPain">
+                            Abdominal Pain</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="WeightLossOrGain" value="Yes" id="MedicalHistory_WeightLossOrGain">
+                            Weight Loss or Gain </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="SwollenAnkles" value="Yes" id="MedicalHistory_SwollenAnkles">
+                            Swollen Ankles </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Lightheadedness" value="Yes" id="MedicalHistory_Lightheadedness">
+                            Lightheadedness </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="HepatitisJaundice" value="Yes" id="MedicalHistory_HepatitisJaundice">
+                            Hepatitis/Jaundice </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="HeartAttack" value="Yes" id="MedicalHistory_HeartAttack">
+                            Heart Attack</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Pneumonia" value="Yes" id="MedicalHistory_Pneumonia">
+                            Pneumonia</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="HeartBurn" value="Yes" id="MedicalHistory_HeartBurn">
+                            Heart burn</label></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Hemmorrhoids" value="Yes" id="MedicalHistory_Hemorrhoids">
+                            Hemorrhoids </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="LowerBackPain" value="Yes" id="MedicalHistory_LowerBackPain">
+                            Lower back pain </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="SkinDisease" value="Yes" id="MedicalHistory_SkinDisease">
+                            Skin Disease</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="ThyroidDisease" value="Yes" id="MedicalHistory_ThyroidDisease">
+                            Thyroid Disease </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="HeartMurmur" value="Yes" id="MedicalHistory_HeartMurmur">
+                            Heart Murmur </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="PersistentCough" value="Yes" id="MedicalHistory_PersistentCough">
+                            Persistent cough </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Nausea" value="Yes" id="MedicalHistory_Nausea">
+                            Nausea</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Ulcers" value="Yes" id="MedicalHistory_Ulcers">
+                            Ulcers</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="BloodDisorder" value="Yes" id="MedicalHistory_BloodDisorder">
+                            Blood Disorder </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="KidneyDisease" value="Yes" id="MedicalHistory_KidneyDisease">
+                            Kidney Disease</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Headache" value="Yes" id="MedicalHistory_Headache">
+                            Headache</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="ChestPain" value="Yes" id="MedicalHistory_ChestPain">
+                            Chest Pain</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="TB" value="Yes" id="MedicalHistory_TB">
+                            TB</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Vomiting" value="Yes" id="MedicalHistory_Vomiting">
+                            Vomiting</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="BloodInStool" value="Yes" id="MedicalHistory_BloodInStool">
+                            Blood in stool</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Gout" value="Yes" id="MedicalHistory_Gout">
+                            Gout</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="KidneyStones" value="Yes" id="MedicalHistory_KidneyStones">
+                            Kidney Stones</label></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="RheumaticFever" value="Yes" id="MedicalHistory_RheumaticFever">
+                            Rheumatic Fever</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Palpations" value="Yes" id="MedicalHistory_Palpations">
+                            Palpations </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Asthma" value="Yes" id="MedicalHistory_Asthma">
+                            Asthma</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Diarrhea" value="Yes" id="MedicalHistory_Diarrhea">
+                            Diarrhea </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Colitis" value="Yes" id="MedicalHistory_Colitis">
+                            Colitis</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="STD" value="Yes" id="MedicalHistory_STD">
+                            STD </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="FrequentUrination" value="Yes" id="MedicalHistory_FrequentUrination">
+                            Frequent Urination </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="DrugAbuse" value="Yes" id="MedicalHistory_DrugAbuse">
+                            Drug Abuse </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="ShortnessOfBreath" value="Yes" id="MedicalHistory_ShortnessOfBreath">
+                            Shortness of Breath</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Mucus" value="Yes" id="MedicalHistory_Mucus">
+                            Mucus </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Constipation" value="Yes" id="MedicalHistory_Constipation">
+                            Constipation</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="NeckPain" value="Yes" id="MedicalHistory_NeckPain">
+                            Neck Pain </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Fainting" value="Yes" id="MedicalHistory_Fainting">
+                            Fainting </label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                        	<input type="checkbox" name="DifficultUrination" value="Yes" id="MedicalHistory_DifficultUrination">
+                            Difficult urination</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="selection-label med-history">
+                            <input type="checkbox" name="Epilepsy" value="Yes" id="MedicalHistory_Epilepsy">
+                            Epilepsy </label></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br>
+                                <label>List any other medical problems that other doctors have diagnosed:</label>
+                                <textarea class="form-control" rows="3" name="otherMedicalProblems" id="otherMedicalProblems"></textarea>
+                                <br>
+                            </div>
+
+                            <!--Childhood Illness-->
+                            <div class="row">
+                                <legend style="display:block;margin-bottom:0">Childhood Ilnesses</legend>
+                                <div class="col-md-12">
+                                    <label class="checkbox-inline">
+                              <input type="checkbox" name="Measles" id="measles" value="Yes"> Measles
+                              </label>
+                                    <label class="checkbox-inline">
+                              <input type="checkbox" name="Mumps" id="Mumps" value="Yes"> Mumps
+                              </label>
+                                    <label class="checkbox-inline">
+                              <input type="checkbox" name="Rubella" id="Rubella" value="Yes"> Rubella
+                              </label>
+                                    <label class="checkbox-inline">
+                        <input type="checkbox" name="Chickenpox" id="Chickenpox" value="Yes"> Chickenpox
+                        </label>
+                                    <label class="checkbox-inline">
+                        <input type="checkbox" name="RheumaticFever" id="RheumaticFever" value="Yes"> Rheumatic Fever
+                        </label>
+                                    <label class="checkbox-inline">
+                              <input type="checkbox" name="Polio" id="Polio" value="Yes"> Polio
+                              </label>
+
+                                </div>
+                            </div>
+                            <br>
+
+                            <!--Immunizations-->
+                            <div class="row">
+                                <legend style="display:block;margin-bottom:0">Immunizations (please give date)</legend>
+                                <div class="col-md-12">
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="TetanusVaccine" id="TetanusVaccine" value="Yes"> Tetanus  <input type="text" class="form-control" id="tetanusDate" placeholder="Date" name="tetanusDate">
+                                    </label>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="PneumoniaVaccine" id="PneumoniaVaccine" value="Yes"> Pneumonia  <input type="text" class="form-control" id="pneumoniaDate" placeholder="Date" name="pneumoniaDate">
+                                    </label>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="HepatitisVaccine" id="HepatitisVaccine" value="Yes"> Hepatitis  <input type="text" class="form-control" id="hepatitisDate" placeholder="Date" name="hepatitisDate">
+                                    </label>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="ChickenpoxVaricellaVaccine" id="ChickenpoxVaricellaVaccine" value="Yes"> Chickenpox/Varicella  <input type="text" class="form-control" id="chickenpoxCaricellaVaccineDate" placeholder="Date" name="chickenpoxCaricellaVaccineDate">
+                                    </label>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="InfluenzaVaccine" id="InfluenzaVaccine" value="Yes"> Influenza  <input type="text" class="form-control" id="influenzaVaccineDate" placeholder="Date" name="influenzaVaccineDate">
+                                    </label><br>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="MMRVaccine" id="MMRVaccine" value="Yes"> MMR (Measles, Mumps, Rubella)  <input type="text" class="form-control" id="MMRVaccineDate" placeholder="Date" name="MMRVaccineDate">
+                                    </label>
+                                </div>
+                                <br>
+                            </div>
+
+                            <!-- Surgeries -->
+                            <div class="row">
+                              <legend style="display:block;">Surgeries</legend>
+                              <div class="table-response">
+                  <table align="center" class="table table-striped table-bordered table-hover table-condensed">
+                    <tbody>
+                      <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Reason</th>
+                        <th scope="col">Hospital</th>
+                      </tr>
+                      <tr>
+                        <td><input type="text" name="surgery1Year" class="form-control" placeholder="1."></td>
+                        <td><input type="text" name="surgery1Reason" class="form-control"></td>
+                        <td><input type="text" name="surgery1Hospital" class="form-control"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" name="surgery2Year" class="form-control" placeholder="2."></td>
+                        <td><input type="text" name="surgery2Reason" class="form-control"></td>
+                        <td><input type="text" name="surgery2Hospital" class="form-control"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" name="surgery3Year" class="form-control" placeholder="3."></td>
+                        <td><input type="text" name="surgery3Reason" class="form-control"></td>
+                        <td><input type="text" name="surgery3Hospital" class="form-control"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                            </div>
+
+                            <!-- Medications/Drugs -->
+                          <div class="row">
+                            <legend style="display:block;">List your prescribed drugs and over-the-counter drugs, such as vitamins and inhalers</legend>
+                            <div class="table-response">
+                              <table align="center" class="table table-striped table-bordered table-hover table-condensed">
+                                <tbody>
+                                  <tr>
+                                    <th scope="col">Drug Name</th>
+                                    <th scope="col">Dosage</th>
+                                    <th scope="col">Frequency Taken</th>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="drugName1" class="form-control" placeholder="1."></td>
+                                    <td><input type="text" name="drugDosage1" class="form-control"></td>
+                                    <td><input type="text" name="drugFrequency1" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="drugName2" class="form-control" placeholder="2."></td>
+                                    <td><input type="text" name="drugDosage2" class="form-control"></td>
+                                    <td><input type="text" name="drugFrequency2" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="drugName3" class="form-control" placeholder="3."></td>
+                                    <td><input type="text" name="drugDosage3" class="form-control"></td>
+                                    <td><input type="text" name="drugFrequency3" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="drugName4" class="form-control" placeholder="4."></td>
+                                    <td><input type="text" name="drugDosage4" class="form-control"></td>
+                                    <td><input type="text" name="drugFrequency4" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="drugName5" class="form-control" placeholder="5."></td>
+                                    <td><input type="text" name="drugDosage5" class="form-control"></td>
+                                    <td><input type="text" name="drugFrequency5" class="form-control"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                          <!-- Allergies to Medications -->
+                        <div class="row">
+                          <legend style="display:block;">Allergies to Medications</legend>
+                          <div class="table-response">
+                            <table align="center" class="table table-striped table-bordered table-hover table-condensed">
+                              <tbody>
+                                <tr>
+                                  <th scope="col">Drug Name</th>
+                                  <th scope="col">Reaction</th>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="allergyName1" class="form-control" placeholder="1."></td>
+                                  <td><input type="text" name="allergyReaction1" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="allergyName2" class="form-control" placeholder="2."></td>
+                                  <td><input type="text" name="allergyReaction2" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                  <td><input type="text" name="allergyName3" class="form-control" placeholder="3."></td>
+                                  <td><input type="text" name="allergyReaction3" class="form-control"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <legend>Social Information</legend>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="drinkAlcohol">Do you drink alcohol?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="drinkAlcohol" value="Yes" id="drinkAlcohol_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="drinkAlcohol" value="No" id="drinkAlcohol_No">
+                              No </label><br><label class="control-label" for="drinkAlcoholFrequency"><strong>If so, what and how often?</strong></label>
+                              <input type="text" class="form-control" id="drinkAlcoholFrequency" placeholder="Drink type/Frequency" name="drinkAlcoholFrequency">
+                                </p>
+
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="useTobacco">Do you use tobacco?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="useTobacco" value="Yes" id="useTobacco_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="useTobacco" value="No" id="useTobacco_No">
+                              No </label><br>
+                              <label class="control-label" for="useTobaccoFrequency"><strong>If so, what and how often?</strong></label>
+                              <input type="text" class="form-control" id="useTobaccoFrequency" placeholder="Tobacco type/Frequency" name="useTobaccoFrequency">
+                                </p>
+
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="useRecreationalDrugs">Do you use recreational or street drugs?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="useRecreationalDrugs" value="Yes" id="useRecreationalDrugs_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="useRecreationalDrugs" value="No" id="useRecreationalDrugs_No">
+                              No </label>
+                                </p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="usedNeedleForStreetDrugs">Have you ever given yourself street drugs with a needle?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="usedNeedleForStreetDrugs" value="Yes" id="usedNeedleForStreetDrugs_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="usedNeedleForStreetDrugs" value="No" id="usedNeedleForStreetDrugs_No">
+                              No </label>
+                                </p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="beenExposedToHIV">Have you ever been exposed to HIV (AIDS)?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="beenExposedToHIV" value="Yes" id="beenExposedToHIV_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="beenExposedToHIV" value="No" id="beenExposedToHIV_No">
+                              No </label>
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <legend>Family Medical History</legend>
+                          <div class="table-response">
+                              <table align="center" class="table table-striped table-bordered table-hover table-condensed">
+                                <tbody>
+                                  <tr>
+                                    <th scope="col">Relationship</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col">Significant Health Problems</th>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="medHistoryRelationship1" class="form-control" placeholder="1."></td>
+                                    <td><input type="text" name="medHistoryAge1" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryProblem1" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="medHistoryRelationship2" class="form-control" placeholder="2."></td>
+                                    <td><input type="text" name="medHistoryAge2" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryProblem2" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="medHistoryRelationship3" class="form-control" placeholder="3."></td>
+                                    <td><input type="text" name="medHistoryAge3" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryProblem3" class="form-control"></td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="text" name="medHistoryRelationship4" class="form-control" placeholder="4."></td>
+                                    <td><input type="text" name="medHistoryAge4" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryProblem4" class="form-control"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+
+                        <div class="row" id="womenSection">
+                          <legend>Women Only</legend>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label" for="dateLastMenstruation">Date of last menstruation:</label>
+                                <input type="text" class="form-control" id="dateLastMenstruation" placeholder="MM/DD/YYYY" name="dateLastMenstruation">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                                        <label class="control-label" for="periodFrequency">Period frequency:</label>
+                                        <input type="text" class="form-control" id="periodFrequency" placeholder="Every X days" name="periodFrequency">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                                        <label class="control-label" for="dateOfLastPap">Date of last PAP:</label>
+                                        <input type="text" class="form-control" id="dateOfLastPap" placeholder="MM/DD/YYYY" name="dateOfLastPap">
+                                    </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label" for="isPregnant">Are you pregnant?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="isPregnant" value="Yes" id="isPregnant_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="isPregnant" value="No" id="isPregnant_No">
+                              No </label>
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <legend>Signature</legend>
+                          <div class="col-md-6">
+                              <label class="control-label">Signature:</label>
+                              <script type="text/javascript">
+                                  new sform.Signature({
+                                      id: 'MedHistorySignature',
+                                      form_name: 'MedicsUSAPatientReg',
+                                      field_name: 'MedHistorySignature',
+                                      caption: 'New Patient Health History Questionnaire Signature',
+                                      w: 500,
+                                      h: 75,
+                                      css: 'inksignature'
+                                  });
+                              </script>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group">
+                                  <label class="control-label" for="medHistorySignatureDate">Today's Date</label>
+                                  <input type="text" class="form-control" id="medHistorySignatureDate" placeholder="MM/DD/YYYY" name="medHistorySignatureDate">
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label" for="patientCompletedForm">Patient completed this form?</label>
+                                <p>
+                                    <label>
+                            <input type="radio" name="patientCompletedForm" value="Yes" id="patientCompletedForm_Yes">
+                            Yes </label>
+                                    <br>
+                                    <label>
+                              <input type="radio" name="patientCompletedForm" value="No" id="patientCompletedForm_No">
+                              No </label>
+                                </p>
+                                <label class="control-label" for="relationshipOfPersonCompletingForm">Relationship (if not patient):</label>
+                                <input type="text" class="form-control" id="relationshipOfPersonCompletingForm" placeholder="Relationship" name="relationshipOfPersonCompletingForm">
+                            </div>
+                          </div>
+                        </div>
+                            <!-- Back/Next Buttons -->
+                            <ul class="pager">
+                                <li class="prevtab">
+                                    <a href="#newPatientRegistration"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> New Patient Registration Form</a>
+                                </li>
+                                <li class="nexttab"><a href="#newPatientPortalAuth">New Patient Portal Authorization <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- TAB 3 -->
+                        <div class="tab-pane" id="newPatientPortalAuth">
+                            <div class="row">
+                              <legend>New Patient Portal Authorization</legend>
+                              <div class="col-md-12">
+                                <p>Patient Portal (henceforth referred to as "Portal") offers convenient and secure access to your personal health record. As
+  the patient, you are in control of your Portal record. We will not activate your personal account unless you authorize
+  Medics USA to do so. If you choose to consent, you understand that you are consenting for Medics USA to e-mail you a
+  unique link that you will use to create a password in order to access the Portal.</p>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="patientPortalAuthConsent">Do you consent?</label>
+                                    <p>
+                                        <label>
+                                <input type="radio" name="patientPortalAuthConsent" value="Yes" id="patientPortalAuthConsent_Yes">
+                                Yes </label>
+                                        <br>
+                                        <label>
+                                  <input type="radio" name="patientPortalAuthConsent" value="No" id="patientPortalAuthConsent_No">
+                                  No </label>
+                                    </p>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="patientPortalEmailAddress">Email address:</label>
+                                    <input type="text" class="form-control" id="patientPortalEmailAddress" placeholder="Email address" name="patientPortalEmailAddress">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Back/Next Buttons -->
+                            <ul class="pager">
+                                <li class="prevtab">
+                                    <a href="#newPatientHealthHistory"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> New Patient Health History Questionnaire</a>
+                                </li>
+                                <li class="nexttab"><a href="#medicalInformationRelease">New Patient Medical Information Release <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- TAB 4 -->
+                        <div class="tab-pane" id="medicalInformationRelease">
+                            <div class="row">
+                              <legend>New Patient Medical Information Release</legend>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="informationReleaseAuthorization">Do you wish to authorize anyone to discuss your medical information?</label>
+                                    <p>
+                                        <label>
+                                <input type="radio" name="informationReleaseAuthorization" value="Yes" id="informationReleaseAuthorization_Yes">
+                                Yes </label>
+                                        <br>
+                                        <label>
+                                  <input type="radio" name="informationReleaseAuthorization" value="No" id="informationReleaseAuthorization_No">
+                                  No </label>
+                                    </p>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                  <label class="control-label" for="informationReleaseName">Authorized Person Name:</label>
+                                  <input type="text" class="form-control" id="informationReleaseName" placeholder="Name" name="informationReleaseName">
+                                  <label class="control-label" for="informationReleasePhone">Authorized Person Phone:</label>
+                                  <input type="text" class="form-control" id="informationReleasePhone" placeholder="Phone" name="informationReleasePhone">
+                                  <label class="control-label" for="informationReleaseValidUntil">Permission Valid Until:</label>
+                                  <input type="text" class="form-control" id="informationReleaseValidUntil" placeholder="MM/DD/YYYY" name="informationReleaseValidUntil">
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="leaveConfidentialVoicemail">Do you authorize Medics USA to leave a confidential voice mail?</label>
+                                    <p>
+                                        <label>
+                                <input type="radio" name="leaveConfidentialVoicemail" value="Yes" id="leaveConfidentialVoicemail_Yes">
+                                Yes </label>
+                                        <br>
+                                        <label>
+                                  <input type="radio" name="leaveConfidentialVoicemail" value="No" id="leaveConfidentialVoicemail_No">
+                                  No </label>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Back/Next Buttons -->
+                            <ul class="pager">
+                                <li class="prevtab">
+                                    <a href="#newPatientPortalAuth"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> New Patient Portal Authorization</a>
+                                </li>
+                                <li class="nexttab"><a href="#paymentAndTreatmentPolicies">Payment and Treatment Policies <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- TAB 5 -->
+                        <div class="tab-pane" id="paymentAndTreatmentPolicies">
+                            <div class="row">
+                              <legend>New Patient Medical Information Release</legend>
+                              <div class="col-md-12">
+                                <p>
+                                  Thank you for choosing Medics USA for your health care services.
+                                </p>
+                                <p>
+                                  The physician-patient relationship benefits when the patient has a clear understanding of his or her rights and obligations. This form
+provides an explanation of Medics USA’s Treatment and Payment Policies and covers such important topics as:
+                                </p>
+                                <ul>
+                                  <li>Patient’s consent to receive medical treatment from Medics USA (and your other rights and responsibilities)</li>
+                                  <li>Patient’s agreement to pay in full any charges that are your responsibility.</li>
+                                </ul>
+                                <p>
+                                  Please review and sign this notice before receiving treatment. You have the right to receive a printed copy of this notice at your
+request. If you have any questions about our Treatment or Payment Policies, please do not hesitate to ask.
+                                </p>
+                                <strong>Treatment Policy</strong>
+                                <p>
+                                  By signing below, you indicate that you are the patient or that you have the legal authority to consent to medical treatment on the
+patient’s behalf. You consent to, understand and agree that:
+</p>
+<ul>
+  <li>You will have the opportunity to discuss the risks and benefits of proposed procedures and therapeutic courses of
+treatment, together with any available alternatives, with the physician or health professional to your satisfaction.</li>
+  <li>You have the right to consent to or refuse any proposed procedure or therapeutic course of treatment at any time.</li>
+  <li>You have the right to decline further treatment at any time.</li>
+  <li>Medics USA will provide the best care possible consistent with the prevailing standards of medical practice but makes no
+assurances or guarantees as to the results of treatment.</li>
+  <li>Subject to the foregoing, Medics USA health care providers may administer any treatment and perform any procedures
+deemed advisable in your care and treatment.</li>
+</ul>
+<strong>Medicare Beneficiaries Receiving Durable Medical Equipment (DME)</strong>
+<p>Subject to the foregoing, Medics USA health care providers may administer any treatment and perform any procedures
+deemed advisable in your care and treatment.</p>
+<ul>
+  <li>While Medicare allows for the purchase or rental of DME, Medics USA only sells the DME that it provides. You are free to
+seek rental DME from other community providers.</li>
+</ul>
+<strong>MedicsUSA First notice of Privacy Practices</strong>
+<p>We will protect the privacy of your health information and will not use or disclose it except as permitted by state and federal law, as
+more fully described in the Medics USA Notice of Privacy Practices that has been made available to you.</p>
+<p>By signing below, you consent to our use and disclosure of your health information in accordance with the Notice of Privacy
+Practices and applicable law.</p>
+<strong>Payment Policy</strong>
+<p>Medics USA is a private organization which relies solely on income from patients and their insurers. In order to provide the best
+possible medical care at the lowest possible cost, we need your assistance and agreement to our payment policies. As the patient or
+the person with legal authority to sign on the patient’s behalf, you understand and agree to the following:</p>
+<ul>
+  <li><u>All Patients:</u> You are responsible for, and agree to pay, the cost of any services that your health plan determines are not
+covered, or services that are covered but applied to a deductible or co-insurance. If you do not know whether services to be
+provided during your visit are covered by your health plan, please contact the carrier using the number found on your
+insurance card. <strong>Note that it is your responsibility to determine whether services to be provided by Medics USA are
+covered by your insurer.</strong></li>
+  <li>In the event that your plan requires approval or referral from your Primary Care Physician or insurer prior to a visit and you
+did not obtain that approval or referral, you will be responsible for, and agree to pay, any costs of care that your insurer
+determines are not covered under your insurance policy and for which you may be held liable under applicable law.</li>
+  <li>If you have health care benefits, Medics USA will submit a claim to your insurer on your behalf and allow no less than 60
+days for the insurer to respond. You agree to pay at time of service any required co-payments, coinsurance and deductibles,
+as well as charges for services not covered by insurance, outstanding balances and delinquent accounts. For your
+convenience, we accept cash and credit cards.</li>
+  <li>In the event that your plan requires approval or referral from your Primary Care Physician or insurer prior to a visit and you
+did not obtain that approval or referral, you will be responsible for, and agree to pay, any costs of care that your insurer
+determines are not covered under your insurance policy and for which you may be held liable under applicable law.</li>
+  <li>Medics USA allows more than the legal and customary amount of time after filing a claim to be reimbursed by insurers. If
+Medics USA has not received a response within 60 days of having filed a claim for a visit, we will assume that the visit is not
+covered and is, therefore, your responsibility. At that time, to the extent permitted by law, we will bill you for the visit
+charges please direct questions regarding non-payment by your insurer to the insurer, not to Medics USA.</li>
+  <li>You will be billed for all unpaid balances deemed by Medics USA or your insurer to be your responsibility. You are
+responsible for paying the bill in full unless special arrangements are approved by Medics USA in its discretion. You must
+call the Patient Accounts department, at the number printed on the billing statement, in order to make such arrangements.
+Late fees of 1.5% per month will be charged on balances that are still unpaid starting 30 days after the first statement.
+There is a fee of $30 for returned checks. Delinquent accounts may be turned over to a collection agency at which time you
+agree to reimburse us the fees of any collection agency, which may be based on a percentage at a maximum of 25% of the
+debt, and all costs, and expenses, including reasonably attorneys’ fees, we incur in such collection efforts.</li>
+  <li><strong>You will be asked to verify your address at every visit; if the address verified by you is not correct and account
+statements are returned, your account will be charged a processing fee of $1.50 per returned statement.</strong></li>
+</ul>
+<strong>Radiology/X-Rays</strong>
+<p>Medics USA offers radiology services in our facility as a convenience for our patients; these services may not be covered by all
+insurance plans. If your plan does not cover any radiology services performed at Medics USA, payment will be required at time of
+service.</p>
+<strong>MedicsUSA reserves the right to deny non-emergency services, if your account is delinquent.</strong>
+<br><br>
+<p>I have read, understand, and agree to the Treatment and Payment Policies described above and understand that Medics USA may
+refuse non-emergency treatment if my account or the patient’s accounts are delinquent. I agree to keep all contact information up
+to date and understand if I do not update my information I will be charged a processing fee of $1.50 per returned statement.</p>
+
+                              </div>
+                              <div class="col-md-6">
+                                  <label class="control-label">Signature:</label>
+                                  <script type="text/javascript">
+                                      new sform.Signature({
+                                          id: 'PaymentPolicySignature',
+                                          form_name: 'MedicsUSAPatientReg',
+                                          field_name: 'PaymentPolicySignature',
+                                          caption: 'Payment Policy Signature',
+                                          w: 500,
+                                          h: 75,
+                                          css: 'inksignature'
+                                      });
+                                  </script>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label class="control-label" for="PaymentPolicySignatureDate">Today's Date:</label>
+                                      <input type="text" class="form-control" id="PaymentPolicySignatureDate" placeholder="MM/DD/YYYY" name="PaymentPolicySignatureDate">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="nameOfPatientPaymentPolicySig">Name of Patient:</label>
+                                    <input type="text" class="form-control" id="nameOfPatientPaymentPolicySig" placeholder="Name of Patient" name="nameOfPatientPaymentPolicySig">
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <p><strong>If you are signing on behalf of a minor, incapacitated or otherwise legally dependent patient, please sign as “Guarantor” below
+and indicate your relationship to the patient.</strong></p>
+                              </div>
+                              <div class="col-md-6">
+                                  <label class="control-label">Signature:</label>
+                                  <script type="text/javascript">
+                                      new sform.Signature({
+                                          id: 'PaymentPolicySignatureGuarantor',
+                                          form_name: 'MedicsUSAPatientReg',
+                                          field_name: 'PaymentPolicySignatureGuarantor',
+                                          caption: 'Payment Policy Signature Guarantor',
+                                          w: 500,
+                                          h: 75,
+                                          css: 'inksignature'
+                                      });
+                                  </script>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="form-group">
+                                      <label class="control-label" for="PaymentPolicySignatureDateGuarantor">Today's Date:</label>
+                                      <input type="text" class="form-control" id="PaymentPolicySignatureDateGuarantor" placeholder="MM/DD/YYYY" name="PaymentPolicySignatureDateGuarantor">
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="nameOfPatientPaymentPolicySigGuarantor">Name of Guarantor:</label>
+                                    <input type="text" class="form-control" id="nameOfPatientPaymentPolicySigGuarantor" placeholder="Name of Patient" name="nameOfPatientPaymentPolicySigGuarantor">
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="nameOfPatientPaymentPolicySigGuarantorRelationship">Guarantor's relationship to Patient:</label>
+                                    <input type="text" class="form-control" id="nameOfPatientPaymentPolicySigGuarantorRelationship" placeholder="Relationship to Patient" name="nameOfPatientPaymentPolicySigGuarantorRelationship">
+                                </div>
+                              </div>
+
+                            <br><br>
+
+                            <legend>Notice of Privacy</legend>
+                            <p><strong>This notice describes how medical information about you may be used and disclosed and how you can get access to
+this information. Please review it carefully.</strong></p><br>
+<strong>Introduction</strong>
+<p>At MEDICS USA, INC, we are committed to treating and using protected health information about you responsibly. This
+Notice of Health Information Practices describes the personal information we collect, and how and when we use or
+disclose that information. It also describes your rights as they relate to your protected health information. This Notice is
+effective April 14, 2003, and applies to all protected health information as defined by federal regulations.</p><br>
+<strong>Understanding Your Health Record/Information</strong>
+<p>Each time you visit MEDICS USA, INC, a record of your visit is made. Typically, this record contains your symptoms,
+examination and test results, diagnoses, treatment, and a plan for future care or treatment. This information often
+referred to as your health or medical record, serves as a basis for planning your care and treatment, and a means of
+communication with other health care professionals, your Health Insurance Company, legal entities, and public health
+officials in order to promote your general health and that of the general public.</p>
+<p>Understanding what is in your record and how your health information is used helps you to ensure its accuracy, better
+understand who, what, when, where, and why others may access your health information, and make more informed
+decisions when authorizing disclosure to others.</p><br>
+<strong>Your Health Information Rights</strong>
+<p>Although your health record is the physical property of Medics USA, Inc., the information belongs to you. You have the
+right to:</p>
+<ul>
+  <li>Obtain a paper copy of this Notice of information practices upon request.</li>
+  <li>Inspect and copy your health record by written request.</li>
+  <li>Request an Amendment to your health record.</li>
+  <li>Obtain an accounting of disclosures of your health information.</li>
+  <li>Request communications of your health information by alternative means or at alternative locations.</li>
+  <li>Request a restriction on certain uses and disclosures of your information.</li>
+  <li>Request a restriction on certain uses and disclosures of your information.</li>
+</ul>
+<br>
+<strong>Our Responsibilities</strong>
+<p>Medics USA Inc. is required to:</p>
+<ul>
+  <li>Maintain the privacy of your health information,</li>
+  <li>Request a restriction on certain uses and disclosures of your information.</li>
+  <li>Abide by the terms of this Notice,</li>
+  <li>Notify you if we are unable to agree to a requested restriction, and</li>
+  <li>Accommodate reasonable requests you may have to communicate health information by alternative means or at alternative locations.</li>
+</ul>
+<br>
+<p>
+  We reserve the right to change our practices and to make the new provisions effective for all protected health
+information we maintain. Should our information practices change, we will post, and if you request, mail you a revised
+notice.
+</p>
+<p>
+  We will not use or disclose your health information without your authorization, except as described in this notice. We
+will also discontinue using or disclosing your health information after we have received a written revocation of the
+authorization according to the procedures included in the authorization.
+</p>
+<br>
+<strong>For More Information or to Report a Problem</strong>
+<p>If you have questions and would like additional information, you may contact the practice:</p>
+<p>MEDICS USA, INC<br>
+17336 Pickwick Drive, Suite 110<br>
+Purcellville, VA 20132<br>
+Telephone: (540) 338-3360<br>
+Fax: (540) 338-1975<br>
+www.MedicsUSA.com</p>
+<p>If you believe your privacy rights have been violated, you can file a complaint with the practice’s Privacy Officer or with
+the Office for Civil Rights, U.S. Department of Health and Human Services. There will be no retaliation for filing a
+complaint with either the Privacy Officer or the Office for Civil Rights. The address for the OCR is listed below:</p>
+<p>
+  Office for Civil Rights<br>
+U.S. Department of Health and Human Services<br>
+200 Independence Avenue, SW<br>
+Room 509F, HHH Building<br>
+Washington, DC 20201<br>
+</p><br>
+<strong>Examples of Disclosures for Treatment, Payment and Health Operations</strong><br><br>
+<em>We will use your health information for treatment.</em>
+<p>For example: Information obtained by a nurse, physician, or other member of your health care team will be recorded in
+your record and used to determine the course of treatment that should work best for you. Your physician will document
+in your record his or her expectations of the members of your health care team. Members of your health care team will
+then record the actions they took and their observations. In that way, the physician will know how you are responding to
+treatment.</p>
+<p><em>We will use your health information for payment.</em><br>
+For example: A bill may be sent to you or a third-party payer. The information on or accompanying the bill may include
+information that identifies you, as well as your diagnosis, procedures, and supplies used.</p>
+<p><em>We will use your health information for regular health operations.</em><br>
+For example: Members of the medical staff, the risk or quality improvement manager, or members of the quality
+improvement team may use information in your health record to assess the care and outcomes in your case and others
+like it. This information will then be used in an effort to continually improve the quality and effectiveness of the
+healthcare and service we provide.</p>
+<p>
+  <em>Business associates:</em> There are some services provided in our organization through contacts with business associates.
+Examples include certain laboratory tests and a copy service we use when making copies of your health record. When
+these services are contracted, we may disclose your health information to our business associate so that they can
+perform the job we have asked them to do and bill you or your third-party payer for services rendered. To protect your
+health information, however, we require the business associate to appropriately safeguard your information.
+</p>
+<p>
+  <em>Communication with family: </em> Health professionals, using their best judgment, may disclose to a family member, other
+relative, close personal friend or any other person you identify, health information relevant to that person’s involvement
+in your care or payment related to your care. This includes appointment reminders, and lab or other test results.
+</p>
+<p>
+  <em>Research:</em> We may disclose information to researchers when their research has been approved by an institutional
+review board that has reviewed the research proposal and established protocols to ensure the privacy of your health
+information.
+</p>
+<p>
+  <em>Funeral directors: </em> We may disclose health information to funeral directors consistent with applicable law to carry out
+their duties.
+</p>
+<p><em>Organ procurement organizations: </em> Consistent with applicable law, we may disclose health information to organ
+procurement organizations or other entities engaged in the procurement, banking, or transplantation of organs for
+the purpose of tissue donation and transplant.</p>
+<p><em>Marketing:</em> We may contact you to provide information about treatment alternatives or other health-related benefits
+and services that may be of interest to you.</p>
+<p><em>Food and Drug Administration (FDA): </em> We may disclose to the FDA health information relative to adverse events with
+respect to food, supplements, product and product defects, or post marketing surveillance information to enable
+product recalls, repairs, or replacement.</p>
+<p><em>Workers’ compensation:</em> We may disclose health information to the extent authorized by and to the extent necessary to
+comply with laws relating to workers compensation or other similar programs established by law.</p>
+<p><em>Public health: </em>As required by law, we may disclose your health information to public health or legal authorities charged
+with preventing or controlling disease, injury, or disability.</p>
+<p><em>Law enforcement: </em> We may disclose health information for law enforcement purposes as required by law or in response
+to a valid subpoena.</p>
+<p>Federal law provides for your health information to be released to an appropriate health oversight agency, public health
+authority or attorney, provided that a work force member or business associate believes in good faith that we have
+engaged in unlawful conduct or have otherwise violated professional or clinical standards and are potentially
+endangering one or more patients, workers or the public.</p>
+
+                            <!-- Back/Next Buttons -->
+                            <ul class="pager">
+                                <li class="prevtab">
+                                    <a href="#newPatientPortalAuth"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> New Patient Medical Information Release</a>
+                                </li>
+                                <li class="nexttab" id="formSubmitButton"><a href="#">Submit <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+              </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <!-- Bootstrap core / JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- JQUERY UI -->
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.min.css">
+    <script src="assets/js/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="assets/js/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Custom Form Script Javascript -->
+    <script type="text/javascript" src="assets/js/min/form-scripts-min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+</html>

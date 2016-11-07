@@ -1,0 +1,2 @@
+[27-Jan-2016 18:45:48 America/Denver] PHP Notice:  Undefined variable: pdf in /home2/colesmar/public_html/colescreative/forms/brady-scholarship/process-form/formFill.php on line 17
+[27-Jan-2016 18:45:48 America/Denver] PHP Fatal error:  Call to a member function getError() on null in /home2/colesmar/public_html/colescreative/forms/brady-scholarship/process-form/formFill.php on line 17

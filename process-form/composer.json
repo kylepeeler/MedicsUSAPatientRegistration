@@ -1,0 +1,14 @@
+{
+    "name": "kpeeler/php-form-filler",
+    "description": "PHP Form filler and emailer utility",
+    "require": {
+        "mikehaertl/php-pdftk": "^0.2.4",
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Kyle Peeler",
+            "email": "kpeeler@colesmarketing.com"
+        }
+    ]
+}

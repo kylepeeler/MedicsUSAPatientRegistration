@@ -1,0 +1,132 @@
+@charset "UTF-8";
+#title {
+}
+.form-group p label {
+	font-weight: normal;
+}
+.jumbotron  {
+	padding-left: 15px;
+	text-align: center;
+}
+.jumbotron h1 .img-responsive {
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+	display: block;
+}
+#msmheader   {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.boxHeading h3 {
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 6px;
+	background-color: #EEEEEE;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.container .row #employmentHistory {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	/* [disabled]margin-left: 10px; */
+}
+tbody tr th {
+	text-align: center;
+	font-size: medium;
+	font-weight: bolder;
+}
+tr td .graduated-checkbox {
+	margin-left: 43%;
+	margin-right: 50%;
+	text-align: center;
+	margin-top: 17px;
+}
+.col-md-12 p label {
+	font-weight: normal;
+}
+.btn.btn-primary {
+	background-color: #B20837;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	margin-left: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: large;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	display: block;
+}
+.jumbotron h1  {
+	font-size: 38px;
+	padding-top: 5px;
+}
+
+@media screen and (max-width:680px){
+.jumbotron h1  {
+	font-size: 28px;
+	padding-top: 5px;
+}
+.jumbotron p {
+	font-size: 16px;
+}
+}
+
+@media (max-width: 400px){
+.jumbotron h1 {
+	font-size: 24px;
+}
+.jumbotron p {
+	font-size: 12px;
+}
+.jumbotron h1 .img-responsive {
+	padding-bottom: 10px;
+}
+}
+
+@media (min-width:992px)
+{
+    .addressline2desktop
+    {
+        width: 28%;
+        float: left;
+        margin-left: 5px;
+    }
+.row-height tr td .surgicalYear {
+	margin: 5px;
+	width: 90px;
+}
+    .addressline3desktop
+    {
+        width: 49%;
+        float: left;
+    }
+    .addressline4desktop
+    {
+        width: 49%;
+        float: left;
+        margin-left: 5px;
+    }
+}
+
+.address
+{
+    margin-bottom: 5px;
+}
+
+.tableResponse {
+	text-align: center!important;
+	margin-left: 50%!important;
+	margin-right: 50%!important;
+	padding-top: 12px!important;
+}
