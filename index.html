@@ -260,7 +260,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label" for="howFindMedicsUSA">How did you find out Medics USA?</label>
-                                        <select class="form-control">
+                                        <select class="form-control" id="howFindMedicsUSA" name="howFindMedicsUSA">
                                             <option>Referred by a hospital or another doctor</option>
                                             <option>Recommended by insurance plan</option>
                                             <option>Recommended by family</option>
@@ -289,7 +289,7 @@
                                 <legend> Insurance Information</legend>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="workRelatedInjury">Is this a work related injury?</label>
+                                        <label class="control-label" for="workRelatedInjury_Yes">Is this a work related injury?</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="workRelatedInjury" value="Yes" id="workRelatedInjury_Yes">
@@ -303,7 +303,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="employerResponsibleForBill">If yes, will your employer be responsible for the bill?</label>
+                                        <label class="control-label" for="employerResponsibleForBill_Yes">If yes, will your employer be responsible for the bill?</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="employerResponsibleForBill" value="Yes" id="employerResponsibleForBill_Yes">
@@ -317,7 +317,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="otherResponsibleBillingParty">Will some person besides you be responsible for the bill?</label>
+                                        <label class="control-label" for="otherResponsibleBillingParty_Yes">Will some person besides you be responsible for the bill?</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="otherResponsibleBillingParty" value="Yes" id="otherResponsibleBillingParty_Yes">
@@ -436,7 +436,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="insurance1Relationship">Patient's relationship to subscriber</label>
+                                        <label class="control-label" for="insurance1Relationship_Self">Patient's relationship to subscriber</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="insurance1Relationship" value="Self" id="insurance1Relationship_Self">
@@ -512,7 +512,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="insurance2Relationship">Patient's relationship to subscriber</label>
+                                        <label class="control-label" for="insurance2Relationship_Self">Patient's relationship to subscriber</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="insurance2Relationship" value="Self" id="insurance2Relationship_Self">
@@ -543,6 +543,7 @@
                                 <div class="col-md-6">
                                     <label class="control-label">Patient/Guardian Signature:</label>
                                     <script type="text/javascript">
+                                        var newPatientRegSignature =
                                         new sform.Signature({
                                             id: 'newPatientRegSignature',
                                             form_name: 'MedicsUSAPatientReg',
@@ -588,7 +589,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="newPatientQuestionnaireGender">Gender:</label>
+                                        <label class="control-label" for="newPatientQuestionnaireGender_M">Gender:</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="newPatientQuestionnaireGender" value="M" id="newPatientQuestionnaireGender_M">
@@ -620,7 +621,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="hadAnesthesiaPreviously">Have you ever had anesthesia (Novocain)?</label>
+                                        <label class="control-label" for="hadAnesthesiaPreviously_Yes">Have you ever had anesthesia (Novocain)?</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="hadAnesthesiaPreviously" value="Yes" id="hadAnesthesiaPreviously_Yes">
@@ -634,7 +635,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="badReactionToAnesthesia">Any bad reaction to anesthesia?</label>
+                                        <label class="control-label" for="badReactionToAnesthesia_Yes">Any bad reaction to anesthesia?</label>
                                         <p>
                                             <label>
                                     <input type="radio" name="badReactionToAnesthesia" value="Yes" id="badReactionToAnesthesia_Yes">
@@ -921,7 +922,7 @@
                                     </div>
                                 </div>
                                 <br>
-                                <label>List any other medical problems that other doctors have diagnosed:</label>
+                                <label for="otherMedicalProblems">List any other medical problems that other doctors have diagnosed:</label>
                                 <textarea class="form-control" rows="3" name="otherMedicalProblems" id="otherMedicalProblems"></textarea>
                                 <br>
                             </div>
@@ -992,18 +993,18 @@
                       </tr>
                       <tr>
                         <td><input type="text" name="surgery1Year" class="form-control" placeholder="1."></td>
-                        <td><input type="text" name="surgery1Reason" class="form-control"></td>
-                        <td><input type="text" name="surgery1Hospital" class="form-control"></td>
+                        <td><input type="text" name="surgery1Reason" class="form-control" title="Surgery 1 Reason"></td>
+                        <td><input type="text" name="surgery1Hospital" class="form-control" title="Surgery 1 Hospital"></td>
                       </tr>
                       <tr>
                         <td><input type="text" name="surgery2Year" class="form-control" placeholder="2."></td>
-                        <td><input type="text" name="surgery2Reason" class="form-control"></td>
-                        <td><input type="text" name="surgery2Hospital" class="form-control"></td>
+                        <td><input type="text" name="surgery2Reason" class="form-control" title="Surgery 2 Reason"></td>
+                        <td><input type="text" name="surgery2Hospital" class="form-control" title="Surgery 2 Hospital"></td>
                       </tr>
                       <tr>
                         <td><input type="text" name="surgery3Year" class="form-control" placeholder="3."></td>
-                        <td><input type="text" name="surgery3Reason" class="form-control"></td>
-                        <td><input type="text" name="surgery3Hospital" class="form-control"></td>
+                        <td><input type="text" name="surgery3Reason" class="form-control" title="Surgery 3 Reason"></td>
+                        <td><input type="text" name="surgery3Hospital" class="form-control" title="Surgery 3 Hospital"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -1023,28 +1024,28 @@
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="drugName1" class="form-control" placeholder="1."></td>
-                                    <td><input type="text" name="drugDosage1" class="form-control"></td>
-                                    <td><input type="text" name="drugFrequency1" class="form-control"></td>
+                                    <td><input type="text" name="drugDosage1" class="form-control" title="Drug 1 Dosage"></td>
+                                    <td><input type="text" name="drugFrequency1" class="form-control" title="Drug 1 Frequency"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="drugName2" class="form-control" placeholder="2."></td>
-                                    <td><input type="text" name="drugDosage2" class="form-control"></td>
-                                    <td><input type="text" name="drugFrequency2" class="form-control"></td>
+                                    <td><input type="text" name="drugDosage2" class="form-control" title="Drug 2 Dosage"></td>
+                                    <td><input type="text" name="drugFrequency2" class="form-control" title="Drug 2 Frequency"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="drugName3" class="form-control" placeholder="3."></td>
-                                    <td><input type="text" name="drugDosage3" class="form-control"></td>
-                                    <td><input type="text" name="drugFrequency3" class="form-control"></td>
+                                    <td><input type="text" name="drugDosage3" class="form-control" title="Drug 3 Dosage"></td>
+                                    <td><input type="text" name="drugFrequency3" class="form-control" title="Drug 3 Frequency"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="drugName4" class="form-control" placeholder="4."></td>
-                                    <td><input type="text" name="drugDosage4" class="form-control"></td>
-                                    <td><input type="text" name="drugFrequency4" class="form-control"></td>
+                                    <td><input type="text" name="drugDosage4" class="form-control" title="Drug 4 Dosage"></td>
+                                    <td><input type="text" name="drugFrequency4" class="form-control" title="Drug 4 Frequency"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="drugName5" class="form-control" placeholder="5."></td>
-                                    <td><input type="text" name="drugDosage5" class="form-control"></td>
-                                    <td><input type="text" name="drugFrequency5" class="form-control"></td>
+                                    <td><input type="text" name="drugDosage5" class="form-control" title="Drug 5 Dosage"></td>
+                                    <td><input type="text" name="drugFrequency5" class="form-control" title="Drug 5 Frequency"></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -1063,15 +1064,15 @@
                                 </tr>
                                 <tr>
                                   <td><input type="text" name="allergyName1" class="form-control" placeholder="1."></td>
-                                  <td><input type="text" name="allergyReaction1" class="form-control"></td>
+                                  <td><input type="text" name="allergyReaction1" class="form-control" title="Drug 1 Reaction"></td>
                                 </tr>
                                 <tr>
                                   <td><input type="text" name="allergyName2" class="form-control" placeholder="2."></td>
-                                  <td><input type="text" name="allergyReaction2" class="form-control"></td>
+                                  <td><input type="text" name="allergyReaction2" class="form-control" title="Drug 2 Reaction"></td>
                                 </tr>
                                 <tr>
                                   <td><input type="text" name="allergyName3" class="form-control" placeholder="3."></td>
-                                  <td><input type="text" name="allergyReaction3" class="form-control"></td>
+                                  <td><input type="text" name="allergyReaction3" class="form-control" title="Drug 3 Reaction"></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -1082,7 +1083,7 @@
                           <legend>Social Information</legend>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label" for="drinkAlcohol">Do you drink alcohol?</label>
+                                <label class="control-label" for="drinkAlcohol_Yes">Do you drink alcohol?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="drinkAlcohol" value="Yes" id="drinkAlcohol_Yes">
@@ -1098,7 +1099,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label" for="useTobacco">Do you use tobacco?</label>
+                                <label class="control-label" for="useTobacco_Yes">Do you use tobacco?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="useTobacco" value="Yes" id="useTobacco_Yes">
@@ -1115,7 +1116,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label" for="useRecreationalDrugs">Do you use recreational or street drugs?</label>
+                                <label class="control-label" for="useRecreationalDrugs_Yes">Do you use recreational or street drugs?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="useRecreationalDrugs" value="Yes" id="useRecreationalDrugs_Yes">
@@ -1129,7 +1130,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label" for="usedNeedleForStreetDrugs">Have you ever given yourself street drugs with a needle?</label>
+                                <label class="control-label" for="usedNeedleForStreetDrugs_Yes">Have you ever given yourself street drugs with a needle?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="usedNeedleForStreetDrugs" value="Yes" id="usedNeedleForStreetDrugs_Yes">
@@ -1143,7 +1144,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label" for="beenExposedToHIV">Have you ever been exposed to HIV (AIDS)?</label>
+                                <label class="control-label" for="beenExposedToHIV_Yes">Have you ever been exposed to HIV (AIDS)?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="beenExposedToHIV" value="Yes" id="beenExposedToHIV_Yes">
@@ -1169,23 +1170,23 @@
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="medHistoryRelationship1" class="form-control" placeholder="1."></td>
-                                    <td><input type="text" name="medHistoryAge1" class="form-control"></td>
-                                    <td><input type="text" name="medHistoryProblem1" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryAge1" class="form-control" title="Family Member 1 Age"></td>
+                                    <td><input type="text" name="medHistoryProblem1" class="form-control" title="Family Member 1 Health Problems"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="medHistoryRelationship2" class="form-control" placeholder="2."></td>
-                                    <td><input type="text" name="medHistoryAge2" class="form-control"></td>
-                                    <td><input type="text" name="medHistoryProblem2" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryAge2" class="form-control" title="Family Member 2 Age"></td>
+                                    <td><input type="text" name="medHistoryProblem2" class="form-control" title="Family Member 2 Health Problems"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="medHistoryRelationship3" class="form-control" placeholder="3."></td>
-                                    <td><input type="text" name="medHistoryAge3" class="form-control"></td>
-                                    <td><input type="text" name="medHistoryProblem3" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryAge3" class="form-control" title="Family Member 3 Age"></td>
+                                    <td><input type="text" name="medHistoryProblem3" class="form-control" title="Family Member 3 Health Problems"></td>
                                   </tr>
                                   <tr>
                                     <td><input type="text" name="medHistoryRelationship4" class="form-control" placeholder="4."></td>
-                                    <td><input type="text" name="medHistoryAge4" class="form-control"></td>
-                                    <td><input type="text" name="medHistoryProblem4" class="form-control"></td>
+                                    <td><input type="text" name="medHistoryAge4" class="form-control" title="Family Member 4 Age"></td>
+                                    <td><input type="text" name="medHistoryProblem4" class="form-control" title="Family Member 4 Health Problems"></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -1214,7 +1215,7 @@
                           </div>
                           <div class="col-md-3">
                             <div class="form-group">
-                                <label class="control-label" for="isPregnant">Are you pregnant?</label>
+                                <label class="control-label" for="isPregnant_Yes">Are you pregnant?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="isPregnant" value="Yes" id="isPregnant_Yes">
@@ -1252,7 +1253,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                                <label class="control-label" for="patientCompletedForm">Patient completed this form?</label>
+                                <label class="control-label" for="patientCompletedForm_Yes">Patient completed this form?</label>
                                 <p>
                                     <label>
                             <input type="radio" name="patientCompletedForm" value="Yes" id="patientCompletedForm_Yes">
@@ -1288,7 +1289,7 @@
                               </div>
                               <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="patientPortalAuthConsent">Do you consent?</label>
+                                    <label class="control-label" for="patientPortalAuthConsent_Yes">Do you consent?</label>
                                     <p>
                                         <label>
                                 <input type="radio" name="patientPortalAuthConsent" value="Yes" id="patientPortalAuthConsent_Yes">
@@ -1322,7 +1323,7 @@
                               <legend>New Patient Medical Information Release</legend>
                               <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label" for="informationReleaseAuthorization">Do you wish to authorize anyone to discuss your medical information?</label>
+                                    <label class="control-label" for="informationReleaseAuthorization_Yes">Do you wish to authorize anyone to discuss your medical information?</label>
                                     <p>
                                         <label>
                                 <input type="radio" name="informationReleaseAuthorization" value="Yes" id="informationReleaseAuthorization_Yes">
@@ -1346,7 +1347,7 @@
                               </div>
                               <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label" for="leaveConfidentialVoicemail">Do you authorize Medics USA to leave a confidential voice mail?</label>
+                                    <label class="control-label" for="leaveConfidentialVoicemail_Yes">Do you authorize Medics USA to leave a confidential voice mail?</label>
                                     <p>
                                         <label>
                                 <input type="radio" name="leaveConfidentialVoicemail" value="Yes" id="leaveConfidentialVoicemail_Yes">

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{api, excanvas.compiled, html5shiv, ink_signatures_v6, respond}" />
+  </component>
+</project>

@@ -1,8 +1,8 @@
-// MSM Employment Application Form
-// Created by Kyle Peeler for Coles Marketing/Methodist Sports Medicine
-// contact: kpeeler@colesmarketing.com
+// Medics USA Patient Registation form
+// Created by Kyle Peeler for Medics USA
+// contact: kapeeler@iupui.edu
 
-var FORM_ID = "MSMApplicationForm";
+var FORM_ID = "MedicsUSAPatientReg";
 var SHOWHIDDENFIELDS = false; //show all hidden fields
 
 //main
